@@ -9,14 +9,18 @@ from sklearn.preprocessing import LabelEncoder
 
 # No Injury vs Injury -- 1 vs 0
 
-data = pd.read_csv(Path("data.csv"))
-print(data['Crash Severity'].unique())
-print(list(data))
 
-# replace row with 0 or 1
+def get_dataframe():
+    data = pd.read_csv(Path("../data.csv"))
+    # replace row with 0 or 1
 
-encoder = LabelEncoder()
-data['Injury?'] = encoder.fit_transform(data['Crash Severity'])
-print(data['Injury?'])
+    encoder = LabelEncoder()
+    data["Injury?"] = encoder.fit_transform(data["Crash Severity"])
+    return data
 
 
+if __name__ == "__main__":
+    data = get_dataframe()
+    print(data["Injury?"])
+    print(data["Crash Severity"].unique())
+    print(list(data))
