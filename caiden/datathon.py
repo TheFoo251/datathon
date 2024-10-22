@@ -4,7 +4,7 @@ from pathlib import Path
 
 def readfile(file_path):
     fout = []
-    with open(Path("..\\", file_path)) as fin:
+    with open(Path(".", file_path)) as fin:
         reader = csv.reader(fin, delimiter=',')
         for line in reader:
             fout.append(line)
@@ -57,14 +57,15 @@ def get_unique_driver_action(vehicle_number):
         return unique_values[1:]
 
         
-
+if __name__ == "__main__":
+    
 
 
             
-print(f"list_of_possible_driver_actions:")
-driver_action = get_unique_driver_action(2) # CHANGE ME 
-for element in driver_action:
-    print(element)
+    print(f"list_of_possible_driver_actions:")
+    driver_action = get_unique_driver_action(1) # CHANGE ME 
+    for element in driver_action:
+        print(element)
 
 """
 list_of_possible_ Driver Actions
