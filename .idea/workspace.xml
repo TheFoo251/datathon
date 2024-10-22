@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c57934a4-7c50-4a77-862f-82fa5f35b9a1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/dawson/data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adeline/hi.py" beforeDir="false" afterPath="$PROJECT_DIR$/adeline/hi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caiden/datathon.py" beforeDir="false" afterPath="$PROJECT_DIR$/caiden/datathon.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dawson/test.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

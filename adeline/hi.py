@@ -4,8 +4,8 @@ from pathlib import Path
 
 def readfile(fp):
     data = []
-    with open(Path(fp)) as fin:
-        reader = csv.reader(fin, delimiter=',')
+    with open(Path(fp)) as file:
+        reader = csv.reader(file, delimiter=',')
         for line in reader:
             data.append(line)
     return data
