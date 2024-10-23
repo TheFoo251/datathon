@@ -1,6 +1,7 @@
 import pandas as pd
 from pathlib import Path
 from sklearn.preprocessing import LabelEncoder
+from matplotlib import pyplot as plt
 
 
 # No Injury vs Injury -- 1 vs 0
@@ -28,3 +29,20 @@ if __name__ == "__main__":
     # print(list(data))
     print(data["Intersection Type"].unique())
     print(data.groupby("Intersection Type")["Severe?"].value_counts())
+
+    intersection_injury_counts = data.groupby("Intersection Type")[
+        "Severe?"
+    ].value_counts()
+
+    pairs = intersection_injury_counts.items()
+
+    # Display the result
+    print(list(pairs))
+
+    # intersection_injury_counts = intersection_injury_counts.reset_index(name='Count')
+
+    # # Example plot of injury types by intersection type
+    # intersection_injury_counts.pivot(index='Intersection Type', columns='Severe?', values='Count').plot(kind='bar', stacked=True)
+    # plt.ylabel('Count of Injuries')
+    # plt.title('Injury Types by Intersection Type')
+    # plt.show()
