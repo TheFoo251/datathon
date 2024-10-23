@@ -28,11 +28,11 @@ numeric_columns = [
     'Number of Pedestrian Fatalities', 'Number of Pedestrians Injured',
     'Maximum Speed Difference'
 ]
+
 df[numeric_columns] = df[numeric_columns].apply(pd.to_numeric, errors='coerce')
 
 # handle missing values (drop or fill as needed)
 df.dropna(subset=['Crash Severity', 'Number of Vehicles Involved'], inplace=True)
-
 
 # strip extra spaces from categorical columns
 categorical_columns = [
@@ -57,7 +57,7 @@ plt.xticks(rotation=45, ha='right')
 plt.tight_layout()
 plt.show()
 
-# print(intersection_crashes)
+print(intersection_crashes)
 
 # print fatalities by intersection
 
