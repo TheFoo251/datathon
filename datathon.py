@@ -33,7 +33,7 @@ def plot_data(df, x_axis):
     print(df.head())
     # Plot
     plt.figure(figsize=(10, 6))
-    df["ratio_severe_fatal"].plot(kind="bar", color="skyblue")
+    df["ratio_severe_fatal"].plot(kind="bar", color="red")
     plt.title(f"Ratio of Severe/Fatal Crashes to Total Crashes by {x_axis}")
     plt.xlabel(x_axis)
     plt.ylabel("Ratio of Severe/Fatal Crashes")
