@@ -66,3 +66,5 @@ if __name__ == "__main__":
         & ~data["Route or Street Name"].str.contains("INTER")
     ]
     plot_all_features(non_interstate_data)
+
+# crashes by the day, heatmap, correlation map, crashes by the week, driver behavior
